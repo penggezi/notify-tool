@@ -37,7 +37,7 @@ notify "权限确认" "是否允许删除文件？"
 notify -i warn "权限确认" "是否允许删除文件？"
 ```
 
-## Claude Code Hook 集成
+## Claude Code Hook 集成示例
 
 在 `~/.claude/settings.json` 中配置：
 
