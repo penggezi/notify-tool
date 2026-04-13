@@ -1,0 +1,22 @@
+{
+  "name": "notify-tool",
+  "version": "1.0.0",
+  "description": "跨平台桌面通知工具，支持 Windows 和 macOS",
+  "main": "src/index.js",
+  "bin": {
+    "notify": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "notification",
+    "desktop",
+    "cross-platform"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "node-notifier": "^10.0.1"
+  }
+}
