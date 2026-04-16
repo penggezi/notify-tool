@@ -79,7 +79,7 @@ Hook 支持的事件类型: `PermissionRequest`, `SessionEnd`, `Stop`, `Subagent
 ## 跨平台支持
 
 - **Windows**: 使用 Windows Toast 通知
-- **macOS**: 使用 macOS Notification Center
+- **macOS**: 使用 macOS Notification Center，标题会添加 emoji 图标前缀（ℹ️/⚠️/❌/✅）使通知类型更直观
 
 ## 项目结构
 
