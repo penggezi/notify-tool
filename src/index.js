@@ -172,7 +172,17 @@ async function main() {
       process.exit(1);
     }
 
-    notifySync(options.title, options.message, {
+    // 为 macOS 添加 emoji 前缀，使通知类型更直观（Windows 系统不加 emoji）
+    const isMac = process.platform === 'darwin';
+    const iconEmojiMap = {
+      info: 'ℹ️ ',
+      warn: '⚠️ ',
+      error: '❌ ',
+      success: '✅ '
+    };
+    const displayTitle = isMac ? (iconEmojiMap[options.icon] || '') + options.title : options.title;
+
+    notifySync(displayTitle, options.message, {
       icon: options.icon,
       sound: options.sound,
       appId: options.appId
